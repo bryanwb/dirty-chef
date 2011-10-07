@@ -1,0 +1,20 @@
+Generated at Fri Oct 07 08:06:59 +0200 2011
+SyntaxError: compile error
+/opt/dirty-chef/cookbooks/dirty/recipes/example1.rb:2: syntax error, unexpected tIDENTIFIER, expecting kEND
+/opt/dirty-chef/cookbooks/dirty/recipes/example1.rb:3:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:578:in `load_recipe'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/language_include_recipe.rb:40:in `include_recipe'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/language_include_recipe.rb:27:in `each'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/language_include_recipe.rb:27:in `include_recipe'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/run_context.rb:72:in `load'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/run_context.rb:69:in `each'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/run_context.rb:69:in `load'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:195:in `setup_run_context'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:159:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/solo.rb:192:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/solo.rb:183:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/solo.rb:183:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-solo:25
+/usr/bin/chef-solo:19:in `load'
+/usr/bin/chef-solo:19
