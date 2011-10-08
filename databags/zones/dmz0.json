@@ -1,5 +1,6 @@
 {
   "id": "dmz0",
-  "nameservers": [ "193.9.15.1", "193.9.14.1" ]
+  "nameservers": [ "193.9.15.1", "193.9.14.1" ],
+  "ntp": [ "ntp1.dmz.woofinc.com", "ntp2.dmz.woofinc.com" ]
 }
 
