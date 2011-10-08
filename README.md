@@ -82,5 +82,9 @@ In shef, you have access to all the node attributes and cookbooks on your system
 
 $ chef-solo -c solo.rb -j example3.json
 
+# To manage user passwords, you have to enable an additional repository
+rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm
+yum install -y ruby-shadow 
 
- 
+how to encrypt passwd for use in recipe
+openssl passwd -1 "theplaintextpassword"
