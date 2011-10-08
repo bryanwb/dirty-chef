@@ -1,1 +1,1 @@
-default["zone"] = "dmz0"
+default["zone"] = "lan0"
