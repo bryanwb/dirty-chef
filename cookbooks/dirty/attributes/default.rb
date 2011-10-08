@@ -1,0 +1,1 @@
+default["zone"] = "dmz0"

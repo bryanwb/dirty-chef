@@ -1,7 +1,23 @@
-Generated at Fri Oct 07 08:06:59 +0200 2011
-SyntaxError: compile error
-/opt/dirty-chef/cookbooks/dirty/recipes/example1.rb:2: syntax error, unexpected tIDENTIFIER, expecting kEND
-/opt/dirty-chef/cookbooks/dirty/recipes/example1.rb:3:in `from_file'
+Generated at Sat Oct 08 10:45:24 +0200 2011
+JSON::ParserError: 745: unexpected token at '{
+  'id':'dmz0',
+  'nameservers': [ '193.9.15.1', '193.9.14.1' ]
+}
+
+'
+/usr/lib/ruby/gems/1.8/gems/json-1.5.2/lib/json/common.rb:148:in `parse'
+/usr/lib/ruby/gems/1.8/gems/json-1.5.2/lib/json/common.rb:148:in `parse'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/data_bag.rb:163:in `load'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection.rb:115:in `inject'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/data_bag.rb:162:in `each'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/data_bag.rb:162:in `inject'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/data_bag.rb:162:in `load'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/data_bag_item.rb:193:in `load'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/language.rb:155:in `data_bag_item'
+/opt/dirty-chef/cookbooks/dirty/recipes/example6.rb:28:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/recipe_definition_dsl_core.rb:69:in `instance_eval'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/recipe_definition_dsl_core.rb:69:in `method_missing'
+/opt/dirty-chef/cookbooks/dirty/recipes/example6.rb:25:in `from_file'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:578:in `load_recipe'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/language_include_recipe.rb:40:in `include_recipe'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/language_include_recipe.rb:27:in `each'
