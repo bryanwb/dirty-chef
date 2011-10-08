@@ -1,7 +1,9 @@
-Generated at Sat Oct 08 13:25:54 +0200 2011
-Chef::Exceptions::MissingLibrary: user[root] (dirty::example8 line 46) had an error: You must have ruby-shadow installed for password support!
-/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/user.rb:70:in `load_current_resource'
-/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:436:in `run_action'
+Generated at Sat Oct 08 15:50:59 +0200 2011
+Errno::ENOENT: directory[/home/root/.ssh] (dirty::example9 line 64) had an error: No such file or directory - /home/root/.ssh
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/directory.rb:46:in `mkdir'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/directory.rb:46:in `action_create'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `send'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `run_action'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:45:in `run_action'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `each'

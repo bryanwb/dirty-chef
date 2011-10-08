@@ -1,0 +1,9 @@
+{
+  "id": "root",
+  "ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA7WgdbOF2ZCXNDGeeS1n3ILFBYrRoDkrXQhyMr7QabpVkQwZFPl9tcshxX2JeXi0MBXu8QFuO8tLznl8wgah6APYca6dKtzg5qFcXaqQqXbEAnbfRA2Y/JQoO8usgy29tVxDmNrpRHCHTnjah2rdlNayZ6EBeSplsZqVZBp1Eqm08/6EBF/POxaDbmklG3j1vbiYL66AgjevGcq3sXF/mQGPV9KGld90zeQJm1/qAxcD5WqCCq4/LSUH/5ee4i5JzDeJh869lVVf92H6gEEO0Gd8qmTcIXfGd4LkuIQCEDk013VEjNcQ8Lxbkmcxen6/qPcjDn71ZDodWMkrxv3wFDw== root@c6.woofinc.com", 
+  "groups": "root",
+  "uid": 0,
+  "shell": "\/bin\/bash",
+  "comment": "BOFH",
+  "password": "$1$PdV3HPti$WXmqrQEVj88fVTHevErxq."
+}
