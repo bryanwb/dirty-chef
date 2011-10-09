@@ -1,0 +1,3 @@
+# At least one file has to exist in order to use directive
+# includedir /etc/sudoers.d in your main sudoers file
+# this one will do

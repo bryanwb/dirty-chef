@@ -44,11 +44,13 @@ service "ntpd" do
 end
 
 # users that have special sudo commands in their databag
-sudoers = [] 
+sudoers = Array.new 
+sudoers_hash = Hash.new
 
 # set up users from databag
 
 data_bag('users').each do |user_name|
+
 	u = data_bag_item('users', user_name)	
 
 	if u['id'] == "root"
@@ -96,12 +98,50 @@ package "sudo" do
   action :upgrade
 end
 
+ruby_block "get_sudo_cmds" do
+   block do
+	  sudoers.each do |username|
+		sudoers_hash[ username ] = data_bag_item("users", username) 
+	  end
+   end
+   action :create
+end
+
 template "/etc/sudoers" do
   source "sudoers.erb"
   mode 0440
   owner "root"
   group "root"
   variables(
-    :sudoers => sudoers 
+    :sudoers => sudoers_hash 
   )
 end
+
+directory "/etc/sudoers.d" do
+  mode 0440
+  owner "root"
+  group "root"
+end 
+
+template "/etc/sudoers.d/README" do
+  mode 0440
+  owner "root"
+  group "root"
+ source "README.sudoers"
+end 
+
+%w{'nrpe' 'nagios-plugins' 'nagios-plugins-disk'
+'nagios-plugins-ping'}.each do |pkg|
+	package pkg 
+end
+
+template "/etc/nagios/nrpe.cfg" do
+	
+end
+
+service 'nrpe' do
+   action [:enable, :start]
+end
+
+
+

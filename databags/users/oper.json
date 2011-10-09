@@ -3,5 +3,7 @@
   "groups": "oper",
   "uid": 977,
   "shell": "\/bin\/bash",
-  "password": "$1$WV1cZLkt$FmFEuRFCGKWaabud6.Gld1"
+  "password": "$1$WV1cZLkt$FmFEuRFCGKWaabud6.Gld1",
+  "sudo_cmds": [ "ALL=(ALL) NOPASSWD:/sbin/reboot",
+		"ALL=(ALL) NOPASSWD:/sbin/poweroff" ]
 }
