@@ -1,8 +1,12 @@
-Generated at Sat Oct 08 20:19:52 +0200 2011
-NoMethodError: undefined method `each_with_index' for nil:NilClass
-/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/template.rb:80:in `source_listing'
-/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/template.rb:90:in `to_s'
-/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:83:in `converge'
+Generated at Sun Oct 09 09:00:00 +0200 2011
+Chef::Exceptions::Package: package['nrpe'] (dirty::example10 line 124) had an error: No version specified, and no candidate version available for 'nrpe'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/package.rb:51:in `action_install'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `send'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `run_action'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:45:in `run_action'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `each'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection.rb:94:in `execute_each_resource'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'

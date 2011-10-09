@@ -10,9 +10,7 @@ root          ALL=(ALL) ALL
 
 includedir /etc/sudoers.d
 
-<% @sudoers.each do |user| 
-	cmds = user['sudo_cmds')	
-	
+<% @sudoers.each do |user,cmds| 
 	cmds.each do |cmd|  -%>
 <%= user %> <%= cmd %>	
 <%	end 
